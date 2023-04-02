@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edie homepage</title>
     <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +24,54 @@
       referrerpolicy="no-referrer"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Edie</h1>
+      <nav class="menu--mobile">
+        <span class="mobile-menu--icon material-symbols-outlined"> menu </span>
+        <aside class="mobile-menu mobile-menu--inactive">
+          <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Our Works</li>
+            <li>Clients</li>
+            <li>Contact</li>
+          </ul>
+          <span class="mobile-menu--close-icon material-symbols-outlined">
+            close
+          </span>
+        </aside>
+      </nav>
+      <nav class="menu--desktop">
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Our Works</li>
+          <li>Clients</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contact">
+      <h2>Unhappy with your website?</h2>
+      <p class="contact--bold">We create beautiful and fast web services</p>
+      <img src="assets/imgs/heroImage.jpg" alt="heroImage" />
+      <p class="contact--bold">Story, emotion and purpose</p>
+      <p>
+        We help transform your ideas into real world applications that will
+        outperform your toughest competition and help you achieve your strategic
+        goals in short period of time.
+      </p>
+      <p class="contact--small">Want us to contact you?</p>
+      <label for="email">
+        <input type="email" placeholder="Email" />
+        <input type="submit" value="Join" />
+      </label>
+    </section>
+    <script src="main.js"></script>
+  </body>
 </html>
